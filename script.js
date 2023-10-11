@@ -43,7 +43,7 @@ let checkAge = function (e) {
   function calcAge() {
     yearAge = Math.floor(ageIndays / 365);
     monthAge = Math.floor((ageIndays % 365) / 30);
-    dayAge = Math.trunc(((ageIndays % 365) / 30) % 30);
+    dayAge = Math.floor((ageIndays % 365) % 30);
   }
   calcAge();
 
