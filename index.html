@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h2>Age Calculator</h2>
+        <p id="error-display"></p>
+      </div>
+      <div class="date-of-birth">
+        <form>
+          <label for="date-of-birth"
+            ><p>Date of Birth:</p>
+            <input
+              type="date"
+              id="date-of-birth"
+              name="date-of-birth"
+              required
+            />
+          </label>
+
+          <button id="submit-btn" type="submit">Check Age</button>
+        </form>
+      </div>
+      <div class="line"></div>
+      <div class="age-output">
+        <h2><span id="years">--</span> years</h2>
+        <h2><span id="months">--</span> months</h2>
+        <h2><span id="days">--</span> days</h2>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
